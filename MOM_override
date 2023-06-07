@@ -18,7 +18,7 @@
 #override ICE_THICKNESS_FILE = "ice_shelf.nc" ! default = "ice_shelf_h.nc"
 #override ICE_THICKNESS_VARNAME = "thick" ! default = "h_shelf"
 #override ICE_AREA_VARNAME = "area"       ! default = "area_shelf_h"
-#override THICKNESS_CONFIG = "ISOMIP"     ! default = "uniform"
+!#override THICKNESS_CONFIG = "ISOMIP"     ! default = "uniform"
 #override TS_CONFIG = "ISOMIP"
 #override ICE_SHELF = True
 #override TRIM_IC_FOR_P_SURF =  False      !   [Boolean] default = False
@@ -30,3 +30,9 @@
 #override NIHALO=4
 #override NJHALO=4
 #override NK=25
+#override TS_FILE = "ts.nc"
+#override THICKNESS_CONFIG = "thickness_file"
+#override THICKNESS_FILE = "thickness_simpleshelf2.nc" 
+#override DAYMAX = 1
+#override REMAP_AFTER_INITIALIZATION = False
+#override HACK_MODE = True

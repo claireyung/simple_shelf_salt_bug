@@ -172,6 +172,10 @@ REMAPPING_SCHEME = "PPM_IH4"    ! default = "PLM"
                                 ! WENO_HYBGEN (3rd-order accurate)
                                 ! PQM_IH4IH3  (4th-order accurate)
                                 ! PQM_IH6IH5  (5th-order accurate)
+REMAP_AFTER_INITIALIZATION = False !   [Boolean] default = True
+                                ! If true, applies regridding and remapping immediately after initialization so
+                                ! that the state is ALE consistent. This is a legacy step and should not be
+                                ! needed if the initialization is consistent with the coordinate mode.
 
 ! === module MOM_domains min_halo ===
 
@@ -194,7 +198,7 @@ ICE_AREA_VARNAME = "area"       ! default = "area_shelf_h"
                                 ! The name of the area variable in ICE_THICKNESS_FILE.
 
 ! === module MOM_state_initialization ===
-THICKNESS_CONFIG = "ISOMIP"     ! default = "uniform"
+THICKNESS_CONFIG = "thickness_file" ! default = "uniform"
                                 ! A string that determines how the initial layer thicknesses are specified for a
                                 ! new run:
                                 !     file - read interface heights from the file specified
@@ -224,6 +228,8 @@ THICKNESS_CONFIG = "ISOMIP"     ! default = "uniform"
                                 !     soliton - Equatorial Rossby soliton.
                                 !     rossby_front - a mixed layer front in thermal wind balance.
                                 !     USER - call a user modified routine.
+THICKNESS_FILE = "thickness_simpleshelf2.nc" !
+                                ! The name of the thickness file.
 TS_CONFIG = "ISOMIP"            !
                                 ! A string that determines how the initial temperatures and salinities are
                                 ! specified for a new run:
@@ -244,6 +250,8 @@ TS_CONFIG = "ISOMIP"            !
                                 !     rossby_front - a mixed layer front in thermal wind balance.
                                 !     SCM_CVMix_tests - used in the SCM CVMix tests.
                                 !     USER - call a user modified routine.
+HACK_MODE = True                !   [Boolean] default = False
+                                ! HACK MODE
 
 ! === module MOM_diag_mediator ===
 
@@ -417,7 +425,7 @@ BUOY_CONFIG = "NONE"            ! default = "zero"
                                 ! (SCM_CVmix_tests), (BFB), (dumbbell), (USER) and (NONE).
 
 ! === module MOM_main (MOM_driver) ===
-DAYMAX = 5.0                    !   [days]
+DAYMAX = 1.0                    !   [days]
                                 ! The final time of the whole simulation, in units of TIMEUNIT seconds.  This
                                 ! also sets the potential end time of the present run segment if the end time is
                                 ! not set via ocean_solo_nml in input.nml.
