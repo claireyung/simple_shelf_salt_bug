@@ -294,25 +294,25 @@
     ! long_name: Potential Vorticity
     ! units: m-1 s-1
     ! cell_methods: xq:point yq:point zl:mean
-"gKEu"  [Unused]
+"gKEu"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_d2,ocean_model_z_d2}
     ! long_name: Zonal Acceleration from Grad. Kinetic Energy
     ! units: m s-2
     ! cell_methods: xq:point yh:mean zl:mean
     ! variants: {gKEu,gKEu_xyave}
-"gKEv"  [Unused]
+"gKEv"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_d2,ocean_model_z_d2}
     ! long_name: Meridional Acceleration from Grad. Kinetic Energy
     ! units: m s-2
     ! cell_methods: xh:mean yq:point zl:mean
     ! variants: {gKEv,gKEv_xyave}
-"rvxu"  [Unused]
+"rvxu"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_d2,ocean_model_z_d2}
     ! long_name: Meridional Acceleration from Relative Vorticity
     ! units: m s-2
     ! cell_methods: xh:mean yq:point zl:mean
     ! variants: {rvxu,rvxu_xyave}
-"rvxv"  [Unused]
+"rvxv"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_d2,ocean_model_z_d2}
     ! long_name: Zonal Acceleration from Relative Vorticity
     ! units: m s-2
@@ -405,13 +405,13 @@
     ! long_name: Shear Stress
     ! units: s-1
     ! cell_methods: xq:point yq:point zl:mean
-"diffu"  [Unused]
+"diffu"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_d2,ocean_model_z_d2}
     ! long_name: Zonal Acceleration from Horizontal Viscosity
     ! units: m s-2
     ! cell_methods: xq:point yh:mean zl:mean
     ! variants: {diffu,diffu_xyave}
-"diffv"  [Unused]
+"diffv"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_d2,ocean_model_z_d2}
     ! long_name: Meridional Acceleration from Horizontal Viscosity
     ! units: m s-2
@@ -588,13 +588,13 @@
     ! long_name: Mixed Layer Thickness at Meridional Velocity Points for Viscosity
     ! units: m
     ! cell_methods: xh:mean yq:point
-"du_dt_visc"  [Unused]
+"du_dt_visc"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_d2,ocean_model_z_d2}
     ! long_name: Zonal Acceleration from Vertical Viscosity
     ! units: m s-2
     ! cell_methods: xq:point yh:mean zl:mean
     ! variants: {du_dt_visc,du_dt_visc_xyave}
-"dv_dt_visc"  [Unused]
+"dv_dt_visc"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_d2,ocean_model_z_d2}
     ! long_name: Meridional Acceleration from Vertical Viscosity
     ! units: m s-2
@@ -706,12 +706,12 @@
     ! long_name: Meridional Barotropic Coriolis Acceleration
     ! units: m s-2
     ! cell_methods: xh:mean yq:point
-"u_accel_bt"  [Unused]
+"u_accel_bt"  [Used]
     ! modules: {ocean_model,ocean_model_d2}
     ! long_name: Barotropic zonal acceleration
     ! units: m s-2
     ! cell_methods: xq:point yh:mean
-"v_accel_bt"  [Unused]
+"v_accel_bt"  [Used]
     ! modules: {ocean_model,ocean_model_d2}
     ! long_name: Barotropic meridional acceleration
     ! units: m s-2
@@ -959,25 +959,25 @@
     ! units: m3 s-1
     ! cell_methods: xh:sum yq:point zl:sum
     ! variants: {vh,vh_xyave}
-"CAu"  [Unused]
+"CAu"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_d2,ocean_model_z_d2}
     ! long_name: Zonal Coriolis and Advective Acceleration
     ! units: m s-2
     ! cell_methods: xq:point yh:mean zl:mean
     ! variants: {CAu,CAu_xyave}
-"CAv"  [Unused]
+"CAv"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_d2,ocean_model_z_d2}
     ! long_name: Meridional Coriolis and Advective Acceleration
     ! units: m s-2
     ! cell_methods: xh:mean yq:point zl:mean
     ! variants: {CAv,CAv_xyave}
-"PFu"  [Unused]
+"PFu"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_d2,ocean_model_z_d2}
     ! long_name: Zonal Pressure Force Acceleration
     ! units: m s-2
     ! cell_methods: xq:point yh:mean zl:mean
     ! variants: {PFu,PFu_xyave}
-"PFv"  [Unused]
+"PFv"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_d2,ocean_model_z_d2}
     ! long_name: Meridional Pressure Force Acceleration
     ! units: m s-2
@@ -1329,13 +1329,13 @@
     ! units: kg^2 g-1 m-3
     ! cell_methods: xh:mean yh:mean zl:mean area:mean
     ! variants: {drho_dS,drho_dS_xyave}
-"dudt"  [Unused]
+"dudt"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_d2,ocean_model_z_d2}
     ! long_name: Zonal Acceleration
     ! units: m s-2
     ! cell_methods: xq:point yh:mean zl:mean
     ! variants: {dudt,dudt_xyave}
-"dvdt"  [Unused]
+"dvdt"  [Used]
     ! modules: {ocean_model,ocean_model_z,ocean_model_d2,ocean_model_z_d2}
     ! long_name: Meridional Acceleration
     ! units: m s-2
@@ -2444,26 +2444,26 @@
     ! units: m s-1
     ! cell_methods: xh:mean yh:mean zl:sum area:mean
     ! variants: {vert_remap_h_tendency,vert_remap_h_tendency_xyave}
-"taux"  [Unused] (CMOR equivalent is "tauuo")
+"taux"  [Used] (CMOR equivalent is "tauuo")
     ! modules: {ocean_model,ocean_model_d2}
     ! long_name: Zonal surface stress from ocean interactions with atmos and ice
     ! units: Pa
     ! standard_name: surface_downward_x_stress
     ! cell_methods: xq:point yh:mean
     ! variants: {taux,tauuo}
-"tauy"  [Unused] (CMOR equivalent is "tauvo")
+"tauy"  [Used] (CMOR equivalent is "tauvo")
     ! modules: {ocean_model,ocean_model_d2}
     ! long_name: Meridional surface stress ocean interactions with atmos and ice
     ! units: Pa
     ! standard_name: surface_downward_y_stress
     ! cell_methods: xh:mean yq:point
     ! variants: {tauy,tauvo}
-"ustar"  [Unused]
+"ustar"  [Used]
     ! modules: {ocean_model,ocean_model_d2}
     ! long_name: Surface friction velocity = [(gustiness + tau_magnitude)/rho0]^(1/2)
     ! units: m s-1
     ! cell_methods: xh:mean yh:mean area:mean
-"p_surf"  [Unused] (CMOR equivalent is "pso")
+"p_surf"  [Used] (CMOR equivalent is "pso")
     ! modules: {ocean_model,ocean_model_d2}
     ! long_name: Pressure at ice-ocean or atmosphere-ocean interface
     ! units: Pa
@@ -2474,7 +2474,7 @@
     ! long_name: Tidal source of BBL mixing
     ! units: W m-2
     ! cell_methods: xh:mean yh:mean area:mean
-"PRCmE"  [Unused] (CMOR equivalent is "wfo")
+"PRCmE"  [Used] (CMOR equivalent is "wfo")
     ! modules: {ocean_model,ocean_model_d2}
     ! long_name: Net surface water flux (precip+melt+lrunoff+ice calving-evap)
     ! units: kg m-2 s-1

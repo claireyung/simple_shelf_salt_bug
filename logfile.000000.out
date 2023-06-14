@@ -505,8 +505,8 @@ MOM_state_initialization: unknown
   MOM_state_initialization INIT_LAYERS_FROM_Z_FILE: False
   MOM_state_initialization THICKNESS_CONFIG: thickness_file
   initialize_thickness_from_file INPUTDIR: INPUT/
-  initialize_thickness_from_file THICKNESS_FILE: thickness_simpleshelf2.nc
-  initialize_thickness_from_file INPUTDIR/THICKNESS_FILE: INPUT/thickness_simpleshelf2.nc
+  initialize_thickness_from_file THICKNESS_FILE: thickness_simpleshelf2_pfile.nc
+  initialize_thickness_from_file INPUTDIR/THICKNESS_FILE: INPUT/thickness_simpleshelf2_pfile.nc
   initialize_thickness_from_file THICKNESS_IC_VAR: h
   initialize_thickness_from_file THICKNESS_IC_RESCALE: 1.0
   MOM_state_initialization TS_CONFIG: ISOMIP
@@ -952,7 +952,7 @@ MOM_main (MOM_driver): unknown
   MOM_main (MOM_driver) DT: 300.0
   MOM_main (MOM_driver) DT_FORCING: 300.0
   MOM_main (MOM_driver) TIMEUNIT: 8.64E+04
-  MOM_main (MOM_driver) DAYMAX (Time): 1:0
+  MOM_main (MOM_driver) DAYMAX (Time): 5:0
   MOM_main (MOM_driver) SINGLE_STEPPING_CALL: True
   MOM_main (MOM_driver) DT_THERM: 300.0
   MOM_main (MOM_driver) DIABATIC_FIRST: False
@@ -996,7 +996,7 @@ MOM_Ice_Shelf_in domain decomposition:     4 X    2
    pe,   is,  ie,  js,  je,    isd, ied, jsd, jed
 
                                      time
-Total runtime                        23.970635
-Initialization                        0.256232
-Main loop                            23.573318
-Termination                           0.116183
+Total runtime                       153.632638
+Initialization                        0.268157
+Main loop                           152.665378
+Termination                           0.673738

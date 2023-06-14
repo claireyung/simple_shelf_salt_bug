@@ -1,45 +1,45 @@
-"ice_shelf_model", "area_shelf_h"  [Unused]
+"ice_shelf_model", "area_shelf_h"  [Used]
     ! long_name: Ice Shelf Area in cell
     ! units: meter2
-"ice_shelf_model", "shelf_mass"  [Unused]
+"ice_shelf_model", "shelf_mass"  [Used]
     ! long_name: mass of shelf
     ! units: kg/m^2
-"ice_shelf_model", "h_shelf"  [Unused]
+"ice_shelf_model", "h_shelf"  [Used]
     ! long_name: ice shelf thickness
     ! units: m
-"ice_shelf_model", "mass_flux"  [Unused]
+"ice_shelf_model", "mass_flux"  [Used]
     ! long_name: Total mass flux of freshwater across the ice-ocean interface.
     ! units: kg/s
-"ice_shelf_model", "melt"  [Unused]
+"ice_shelf_model", "melt"  [Used]
     ! long_name: Ice Shelf Melt Rate
     ! units: m yr-1
-"ice_shelf_model", "thermal_driving"  [Unused]
+"ice_shelf_model", "thermal_driving"  [Used]
     ! long_name: pot. temp. in the boundary layer minus freezing pot. temp. at the ice-ocean interface.
     ! units: Celsius
-"ice_shelf_model", "haline_driving"  [Unused]
+"ice_shelf_model", "haline_driving"  [Used]
     ! long_name: salinity in the boundary layer minus salinity at the ice-ocean interface.
     ! units: psu
-"ice_shelf_model", "sbdry"  [Unused]
+"ice_shelf_model", "sbdry"  [Used]
     ! long_name: salinity at the ice-ocean interface.
     ! units: psu
-"ice_shelf_model", "u_ml"  [Unused]
+"ice_shelf_model", "u_ml"  [Used]
     ! long_name: Eastward vel. in the boundary layer (used to compute ustar)
     ! units: m s-1
-"ice_shelf_model", "v_ml"  [Unused]
+"ice_shelf_model", "v_ml"  [Used]
     ! long_name: Northward vel. in the boundary layer (used to compute ustar)
     ! units: m s-1
-"ice_shelf_model", "exch_vel_s"  [Unused]
+"ice_shelf_model", "exch_vel_s"  [Used]
     ! long_name: Sub-shelf salinity exchange velocity
     ! units: m s-1
-"ice_shelf_model", "exch_vel_t"  [Unused]
+"ice_shelf_model", "exch_vel_t"  [Used]
     ! long_name: Sub-shelf thermal exchange velocity
     ! units: m s-1
-"ice_shelf_model", "tfreeze"  [Unused]
+"ice_shelf_model", "tfreeze"  [Used]
     ! long_name: In Situ Freezing point at ice shelf interface
     ! units: degC
-"ice_shelf_model", "tflux_shelf"  [Unused]
+"ice_shelf_model", "tflux_shelf"  [Used]
     ! long_name: Heat conduction into ice shelf
     ! units: W m-2
-"ice_shelf_model", "ustar_shelf"  [Unused]
+"ice_shelf_model", "ustar_shelf"  [Used]
     ! long_name: Fric vel under shelf
     ! units: m/s

@@ -688,7 +688,7 @@ THICKNESS_CONFIG = "thickness_file" ! default = "uniform"
                                 !     soliton - Equatorial Rossby soliton.
                                 !     rossby_front - a mixed layer front in thermal wind balance.
                                 !     USER - call a user modified routine.
-THICKNESS_FILE = "thickness_simpleshelf2.nc" !
+THICKNESS_FILE = "thickness_simpleshelf2_pfile.nc" !
                                 ! The name of the thickness file.
 THICKNESS_IC_VAR = "h"          ! default = "h"
                                 ! The variable name for layer thickness initial conditions.
@@ -1786,7 +1786,7 @@ USE_WAVES = False               !   [Boolean] default = False
                                 ! If true, enables surface wave modules.
 
 ! === module MOM_main (MOM_driver) ===
-DAYMAX = 1.0                    !   [days]
+DAYMAX = 5.0                    !   [days]
                                 ! The final time of the whole simulation, in units of TIMEUNIT seconds.  This
                                 ! also sets the potential end time of the present run segment if the end time is
                                 ! not set via ocean_solo_nml in input.nml.
